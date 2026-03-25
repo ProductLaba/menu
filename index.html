@@ -11,30 +11,44 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1>Выберите продукт</h1>
-    </header>
-    <main class="menu">
-      <ul class="product-list">
-        <li class="button_product">
-          <a class="link_product" href="https://survey.questionstar.ru/ivket">Кета слабосоленая</a>
-        </li>
-        <li class="button_product">
-          <a class="link_product" href="https://survey.questionstar.ru/ivlos">Икра красная</a>
-        </li>
-        <li class="button_product">
-          <a class="link_product" href="https://survey.questionstar.ru/ivsvin">Окорок</a>
-        </li>
-        <li class="button_product">
-          <a class="link_product" href="https://survey.questionstar.ru/ivtvo">Творог</a>
-        </li>
-        <li class="button_product">
-            <a class="link_product" href="https://survey.questionstar.ru/ivch">Шоколадно-молочная паста</a>
-        </li>
-      </ul>
-    </main>
-    <footer class="footer">
       <img class="fotter_logo" src="./images/footer.svg">
-    </footer>
+    </header>
+    <main class="main">
+      <button class="new-person-btn" id="newPersonBtn">
+        Новый респондент
+      </button>
+    <section class="menu"> 
+      <ul class="product-list">
+      </ul>
+    </section>
+    </main>
+    <!-- <footer class="footer">
+      <img class="fotter_logo" src="./images/footer.svg">
+    </footer> -->
+    <dialog class="card-dialog" id="cardDialog">
+      <div class="dialog-content">
+        <h2 class="dialog-title">Введите номер карты ЛЕНТА</h2>
+        
+        <form method="dialog" class="dialog-form">
+          <input 
+            type="text" 
+            class="dialog-input" 
+            id="cardInput" 
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+          >
+          
+          <div class="dialog-buttons">
+            <button type="submit" class="dialog-btn save-btn" id="saveCardBtn">
+              Сохранить
+            </button>
+            <button type="button" class="dialog-btn close-btn" id="closeDialogBtn">
+              ✕
+            </button>
+          </div>
+        </form>
+      </div>
+    </dialog>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
